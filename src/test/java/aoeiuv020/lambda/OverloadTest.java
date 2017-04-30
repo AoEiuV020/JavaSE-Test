@@ -22,7 +22,7 @@ public class OverloadTest{
         assertEquals(1,obj.n);
         obj.notInvoke(() -> {fail();return 0;});
         assertEquals(6,obj.n);
-        obj.notInvoke((Callable)() -> 0);
+        obj.notInvoke((Callable<Integer>)() -> 0);
         assertEquals(8,obj.n);
         obj.notInvoke((C.CallHolder)() -> 0);
         assertEquals(13,obj.n);
