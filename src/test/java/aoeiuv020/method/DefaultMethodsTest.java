@@ -4,6 +4,9 @@ import java.io.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 /**
+ * 测试拥有默认方法的接口，
+ * 这样就相当于多重继承了，
+ * 感觉是相当好用的功能，但是android上api &lt; 24不支持,
  * Created by AoEiuV020 on 2017/04/30.
  */
 public class DefaultMethodsTest{
